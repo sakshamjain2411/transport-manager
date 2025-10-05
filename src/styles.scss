@@ -43,9 +43,16 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    &:disabled {
+        background-color: #ccc;
+    }
 }
 .btn-primary {
     background-color: #007BFF;
+    color: white;
+}
+.btn-danger {
+    background-color: #DC3545;
     color: white;
 }
 
@@ -84,9 +91,6 @@ h2 {
     .btn {
         width: 100%;
         margin-top: 10px;
-        :disabled {
-            background-color: #ccc;
-        }
     }
 }
 .overlay {
@@ -134,4 +138,9 @@ h2 {
         justify-content: flex-end;
         gap: 10px;
     }
+}
+
+.clear {
+    font-size: 14px;
+    color: #007BFF;
 }
